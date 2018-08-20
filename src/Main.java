@@ -25,7 +25,7 @@ public class Main{
     private static ArrayList<String[]> requiredLibraries = new ArrayList<>();
     public static final boolean jLayer = false;
     public static final boolean webcam = false;
-    public static final boolean simplelibraryExtended = true;
+    public static final boolean simplelibraryExtended = false;
     public static final boolean textToSpeech = false;
     public static final boolean mediaButtons = false;
     //Download details

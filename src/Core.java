@@ -98,28 +98,11 @@ public class Core extends Renderer2D{
         gui = new GUI(is3D?GameHelper.MODE_HYBRID:GameHelper.MODE_2D, helper);
         gui.open(new MenuGame(gui, null));
     }
-    public static void tickInit() throws LWJGLException{
-        if(Main.mediaButtons){
-            com.melloware.jintellitype.JIntellitype.getInstance().addIntellitypeListener((int command) -> {
-                System.err.println("Unhandeled Intellitype command: "+command);
-            });
-        }
-    }
-    public static void finalInit() throws LWJGLException{
-        if(Main.jLayer){
-            Sounds.create();
-        }
-    }
+    public static void tickInit() throws LWJGLException{}
+    public static void finalInit() throws LWJGLException{}
     public static void tick(boolean isLastTick){
-        if(Main.jLayer){
-            Sounds.tick(isLastTick);
-        }
         if(!isLastTick){
             gui.tick();
-        }else{
-            if(Main.mediaButtons){
-                com.melloware.jintellitype.JIntellitype.getInstance().cleanUp();
-            }
         }
     }
     public static void render(int milisSinceLastTick){
