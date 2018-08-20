@@ -4,7 +4,6 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.GL11;
 import simplelibrary.opengl.gui.GUI;
 import simplelibrary.opengl.gui.Menu;
-import simplelibrary.opengl.gui.components.MenuComponentList;
 import simplelibrary.opengl.gui.components.MenuComponentMulticolumnList;
 public class MenuGame extends Menu{
     private MenuComponentMulticolumnList trains;
